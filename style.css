@@ -6,6 +6,10 @@
 
 }
 
+* {
+    overflow-x: hidden;
+}
+
 .logo {
     display: inline-block;
     margin: 1rem;
@@ -111,6 +115,22 @@ img {
     align-items: center;
     flex-wrap: wrap;
     margin: 4rem 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainContainer {
+        width: 100vw;
+        margin: 4rem 1rem;
+    }
+
+    .jobFilters {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 4rem 5rem;
+        width: 12rem;
+    }
 }
 
 .btn {
